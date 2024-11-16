@@ -1,130 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    >
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
+    <!-- GridLayout to organize buttons in columns and rows -->
+<androidx.gridlayout.widget.GridLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="16dp"
+app:columnCount="2">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:columnCount="2"
-        app:rowCount="5"
-        android:layout_margin="10dp">
+    <!-- Button 1 -->
+<Button
+android:layout_width="0dp"
+    android:layout_height="200dp"
+    android:layout_margin="8dp"
+    android:backgroundTint="#F44336"
+    android:background="@drawable/button_background"
+    android:text="Button 1"
+    app:layout_columnWeight="1"
+    app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#F44336"
-            android:background="@drawable/button_background"
-            android:text="Button"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
+    <!-- Button 2 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#009688"
+android:text="Button 2"
+app:layout_columnWeight="1"
+app:layout_rowWeight="1"
+android:background="@drawable/button_background" />
 
-            app:layout_rowWeight="1" />
+    <!-- Button 3 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#9C27B0"
+android:text="Button 3"
+android:background="@drawable/button_background"
+app:layout_columnWeight="1"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#009688"
-            android:text="Button"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            android:background="@drawable/button_background"
-            app:layout_rowWeight="1" />
+    <!-- Button 4 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#FFEB3B"
+android:text="Button 4"
+android:background="@drawable/button_background"
+app:layout_columnWeight="1"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#9C27B0"
-            android:text="Button"
-            android:background="@drawable/button_background"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
+    <!-- Button 5 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#03A9F4"
+android:text="Button 5"
+android:background="@drawable/button_background"
+app:layout_columnWeight="1"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#FFEB3B"
-            android:text="Button"
-            android:background="@drawable/button_background"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
+    <!-- Button 6 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#8BC34A"
+android:text="Button 6"
+app:layout_columnWeight="1"
+app:layout_gravity="fill"
+android:background="@drawable/button_background"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#03A9F4"
-            android:text="Button"
-            android:background="@drawable/button_background"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
+    <!-- Button 7 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#E91E63"
+android:background="@drawable/button_background"
+android:text="Button 7"
+app:layout_columnWeight="1"
+app:layout_gravity="fill"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#8BC34A"
-            android:text="Button"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            android:background="@drawable/button_background"
-            app:layout_rowWeight="1" />
+    <!-- Button 8 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#3F51B5"
+android:background="@drawable/button_background"
+android:text="Button 8"
+app:layout_columnWeight="1"
+app:layout_gravity="fill"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#E91E63"
-            android:background="@drawable/button_background"
-            android:text="Button"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
+    <!-- Button 9 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#FFECB3"
+android:text="Button 9"
+android:background="@drawable/button_background"
+app:layout_columnWeight="1"
+app:layout_gravity="fill"
+app:layout_rowWeight="1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#3F51B5"
-            android:background="@drawable/button_background"
-            android:text="Button"
-
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:layout_margin="10dp"
-            android:backgroundTint="#FFECB3"
-            android:text="Button"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/button_background"
-            android:backgroundTint="#C62828"
-            android:text="Button"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_rowWeight="1" />
+    <!-- Button 10 -->
+<Button
+android:layout_width="0dp"
+android:layout_height="200dp"
+android:layout_margin="8dp"
+android:backgroundTint="#C62828"
+android:text="Button 10"
+android:background="@drawable/button_background"
+app:layout_columnWeight="1"
+app:layout_gravity="fill"
+app:layout_rowWeight="1" />
     </androidx.gridlayout.widget.GridLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
